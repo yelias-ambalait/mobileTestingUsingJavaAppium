@@ -1,13 +1,10 @@
 package stepDefinitions;
-import io.appium.java_client.AppiumDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import pages.textMessagePage.TextMessagePage;
 import utils.ContextSetup;
 public class TextMessageSteps {
-
-    AppiumDriver driver;
     TextMessagePage textMessagePage;
     ContextSetup setup;
     public TextMessageSteps(ContextSetup setup) {
@@ -21,7 +18,7 @@ public class TextMessageSteps {
     @When("Click on the Start Chat button")
     public void start_chat_button() throws InterruptedException {
         textMessagePage.getStartChatButton().click();
-        Thread.sleep(2000);
+        Thread.sleep(4000);
     }
     @When("Click on the Contact name button")
     public void contact_name_button() throws InterruptedException {

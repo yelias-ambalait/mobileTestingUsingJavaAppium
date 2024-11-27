@@ -4,7 +4,7 @@ Feature: Message sending functionality testing
     Given Start chat button is displayed
     When Click on the Start Chat button
     And Click on the Contact name button
-    And Send the message "Hello" to the specific user
+    And Send the message "Hello, how are you? are you available for now" to the specific user
     And Click on the Send button
 
 
